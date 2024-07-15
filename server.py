@@ -33,6 +33,4 @@ if __name__ == '__main__':
 	
 	args = parser.parse_args()
 
-	print(args)
-
 	uvicorn.run('server:app', host=args.host, port=args.port, reload=args.reload)
